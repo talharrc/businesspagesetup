@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FB Business Suite | Galaxa Tech Service Proposal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:wght@300;400;700;900&display=swap');
+        
+        :root {
+            --brand-red: #dc2626;
+            --dark-bg: #030303;
+        }
+
+        body { 
+            font-family: 'Inter', 'Hind Siliguri', sans-serif; 
+            background-color: var(--dark-bg);
+            color: white;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .noise::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: url("https://grainy-gradients.vercel.app/noise.svg");
+            opacity: 0.04;
+            pointer-events: none;
+            z-index: 999;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #ffffff 0%, #666 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .reveal { animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+
+        .price-tag {
+            background: linear-gradient(90deg, #dc2626, #991b1b);
+        }
+    </style>
+</head>
+<body class="noise selection-red overflow-x-hidden">
+
+    <!-- Navbar Minimal -->
+    <nav class="fixed w-full z-[100] py-6 px-6 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl font-black tracking-tighter uppercase flex items-center gap-3">
+                <div class="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center">
+                    <span class="text-white text-xs font-bold">GT</span>
+                </div>
+                <span>GALAXA<span class="text-red-600">TECH</span></span>
+            </a>
+            <div class="text-[10px] font-black tracking-widest text-slate-500 uppercase">Proposal ID: #FB-2026-001</div>
+        </div>
+    </nav>
+
+    <!-- Hero Content -->
+    <section class="pt-40 pb-20 px-6">
+        <div class="max-w-4xl mx-auto text-center reveal">
+            <span class="text-red-600 font-black tracking-[0.5em] uppercase text-[10px] mb-6 block">Premium Social Infrastructure</span>
+            <h1 class="text-4xl md:text-7xl font-black tracking-tighter uppercase mb-8 leading-[0.9]">Facebook Business <br/><span class="text-red-600">Foundation</span></h1>
+            <p class="text-lg text-slate-400 font-medium leading-relaxed max-w-2xl mx-auto">
+                ফেসবুকে আপনার ব্র্যান্ডের সঠিক যাত্রা শুরু করুন। একটি প্রফেশনাল পেজ সেটআপ আপনার বিজনেসের গ্রহণযোগ্যতা এবং ট্রাস্ট বৃদ্ধিতে প্রথম ধাপ।
+            </p>
+        </div>
+    </section>
+
+    <!-- Pricing & Details -->
+    <section class="pb-32 px-6">
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12 items-start">
+            
+            <!-- Left: Feature List -->
+            <div class="lg:col-span-7 space-y-6 reveal" style="animation-delay: 0.2s;">
+                <h3 class="text-xl font-black uppercase tracking-widest text-red-600 mb-8 flex items-center gap-4">
+                    What's Included <span class="h-px bg-red-600/30 flex-grow"></span>
+                </h3>
+                
+                <div class="grid sm:grid-cols-1 gap-4">
+                    <!-- Feature Items -->
+                    <div class="glass-card p-6 rounded-3xl flex items-center gap-6 group hover:border-red-600/50">
+                        <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center group-hover:bg-red-600 transition-colors">
+                            <i data-lucide="facebook" class="w-6 h-6 text-red-600 group-hover:text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-black uppercase text-sm tracking-widest">Business Page Creation</h4>
+                            <p class="text-xs text-slate-500 mt-1">পূর্ণাঙ্গ বিজনেস পেজ তৈরি এবং অপ্টিমাইজেশন।</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-3xl flex items-center gap-6 group hover:border-red-600/50">
+                        <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center group-hover:bg-red-600 transition-colors">
+                            <i data-lucide="image" class="w-6 h-6 text-red-600 group-hover:text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-black uppercase text-sm tracking-widest">Premium Design Assets</h4>
+                            <p class="text-xs text-slate-500 mt-1">১টি প্রফেশনাল কভার ফটো ডিজাইন এবং প্রোফাইল পিকচার সেটআপ।</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-3xl flex items-center gap-6 group hover:border-red-600/50">
+                        <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center group-hover:bg-red-600 transition-colors">
+                            <i data-lucide="message-circle" class="w-6 h-6 text-red-600 group-hover:text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-black uppercase text-sm tracking-widest">WhatsApp & CTA Integration</h4>
+                            <p class="text-xs text-slate-500 mt-1">মেসেজিং, হোয়াটসঅ্যাপ এবং কল বাটন ইন্টিগ্রেশন।</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-3xl flex items-center gap-6 group hover:border-red-600/50">
+                        <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center group-hover:bg-red-600 transition-colors">
+                            <i data-lucide="layout-grid" class="w-6 h-6 text-red-600 group-hover:text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-black uppercase text-sm tracking-widest">Initial Content Strategy</h4>
+                            <p class="text-xs text-slate-500 mt-1">প্রথম ৩টি প্রফেশনাল পোস্ট (কন্টেন্ট ও ডিজাইন সহ)।</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-3xl flex items-center gap-6 group hover:border-red-600/50">
+                        <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center group-hover:bg-red-600 transition-colors">
+                            <i data-lucide="settings" class="w-6 h-6 text-red-600 group-hover:text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-black uppercase text-sm tracking-widest">Advanced Admin Setup</h4>
+                            <p class="text-xs text-slate-500 mt-1">ম্যাসেজিং অটো-রিপ্লাই এবং পেজ রোলস কনফিগারেশন।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Price Sticky Card -->
+            <div class="lg:col-span-5 lg:sticky lg:top-32 reveal" style="animation-delay: 0.4s;">
+                <div class="glass-card rounded-[3rem] overflow-hidden border-red-600/20 shadow-2xl shadow-red-600/5">
+                    <div class="price-tag p-12 text-center relative">
+                        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 24px 24px;"></div>
+                        <h5 class="text-[10px] font-black uppercase tracking-[0.5em] text-white/70 mb-4">Investment</h5>
+                        <div class="text-6xl md:text-7xl font-black tracking-tighter">৳6,000</div>
+                        <p class="text-sm font-bold uppercase tracking-widest mt-4 opacity-80">One-Time Fee</p>
+                    </div>
+                    <div class="p-10 space-y-8">
+                        <div class="flex items-center justify-between py-4 border-b border-white/5">
+                            <span class="text-xs font-black uppercase tracking-widest text-slate-500">Timeline</span>
+                            <span class="text-sm font-bold">2–3 Working Days</span>
+                        </div>
+                        <div class="flex items-center justify-between py-4 border-b border-white/5">
+                            <span class="text-xs font-black uppercase tracking-widest text-slate-500">Service Area</span>
+                            <span class="text-sm font-bold">Global / Local (BD)</span>
+                        </div>
+                        <div class="flex items-center justify-between py-4 border-b border-white/5">
+                            <span class="text-xs font-black uppercase tracking-widest text-slate-500">Post-Launch Support</span>
+                            <span class="text-sm font-bold">7 Days Support</span>
+                        </div>
+
+                        <button onclick="handleEmail()" class="w-full py-6 bg-white text-black font-black uppercase tracking-widest text-xs rounded-2xl hover:bg-red-600 hover:text-white transition-all shadow-xl flex items-center justify-center gap-3">
+                            Approve Proposal <i data-lucide="check-circle" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <p class="text-center mt-8 text-[10px] text-slate-500 uppercase font-black tracking-widest">
+                    Crafted for excellence by <span class="text-red-600">Galaxa Tech</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Minimal -->
+    <footer class="py-12 px-6 border-t border-white/5 text-center">
+        <p class="text-[9px] text-slate-600 uppercase font-black tracking-[0.4em]">© 2026 Galaxa Tech. Solution to the Marketing Conundrum.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        function handleEmail() {
+            const email = atob("dGFsaGFycmNAZ21haWwuY29t");
+            window.location.href = `mailto:${email}?subject=Approve: Facebook Business Suite Proposal (৳6,000)`;
+        }
+    </script>
+</body>
+</html>
