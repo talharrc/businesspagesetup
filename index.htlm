@@ -53,128 +53,133 @@
         .price-tag {
             background: linear-gradient(90deg, #dc2626, #991b1b);
         }
+
+        /* Responsive adjustments for very small screens */
+        @media (max-width: 380px) {
+            .hero-title { font-size: 2.5rem !important; }
+        }
     </style>
 </head>
 <body class="noise selection-red overflow-x-hidden">
 
     <!-- Navbar Minimal -->
-    <nav class="fixed w-full z-[100] py-6 px-6 backdrop-blur-md border-b border-white/5">
+    <nav class="fixed w-full z-[100] py-4 md:py-6 px-4 md:px-6 backdrop-blur-md border-b border-white/5">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-xl font-black tracking-tighter uppercase flex items-center gap-3">
-                <div class="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center">
-                    <span class="text-white text-xs font-bold">GT</span>
+            <a href="index.html" class="text-lg md:text-xl font-black tracking-tighter uppercase flex items-center gap-2 md:gap-3">
+                <div class="w-7 h-7 md:w-8 md:h-8 bg-red-600 rounded-lg flex items-center justify-center">
+                    <span class="text-white text-[10px] md:text-xs font-bold">GT</span>
                 </div>
                 <span>GALAXA<span class="text-red-600">TECH</span></span>
             </a>
-            <div class="text-[10px] font-black tracking-widest text-slate-500 uppercase">Proposal ID: #FB-2026-001</div>
+            <div class="text-[8px] md:text-[10px] font-black tracking-widest text-slate-500 uppercase">#FB-2026-001</div>
         </div>
     </nav>
 
     <!-- Hero Content -->
-    <section class="pt-40 pb-20 px-6">
+    <section class="pt-32 pb-12 md:pt-40 md:pb-20 px-6">
         <div class="max-w-4xl mx-auto text-center reveal">
-            <span class="text-red-600 font-black tracking-[0.5em] uppercase text-[10px] mb-6 block">Premium Social Infrastructure</span>
-            <h1 class="text-4xl md:text-7xl font-black tracking-tighter uppercase mb-8 leading-[0.9]">Facebook Business <br/><span class="text-red-600">Foundation</span></h1>
-            <p class="text-lg text-slate-400 font-medium leading-relaxed max-w-2xl mx-auto">
+            <span class="text-red-600 font-black tracking-[0.3em] md:tracking-[0.5em] uppercase text-[9px] md:text-[10px] mb-4 md:mb-6 block">Premium Social Infrastructure</span>
+            <h1 class="hero-title text-4xl md:text-7xl font-black tracking-tighter uppercase mb-6 md:mb-8 leading-[1] md:leading-[0.9]">Facebook Business <br/><span class="text-red-600">Foundation</span></h1>
+            <p class="text-base md:text-lg text-slate-400 font-medium leading-relaxed max-w-2xl mx-auto px-2">
                 ফেসবুকে আপনার ব্র্যান্ডের সঠিক যাত্রা শুরু করুন। একটি প্রফেশনাল পেজ সেটআপ আপনার বিজনেসের গ্রহণযোগ্যতা এবং ট্রাস্ট বৃদ্ধিতে প্রথম ধাপ।
             </p>
         </div>
     </section>
 
     <!-- Pricing & Details -->
-    <section class="pb-32 px-6">
-        <div class="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12 items-start">
+    <section class="pb-20 md:pb-32 px-4 md:px-6">
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-12 gap-8 md:gap-12 items-start">
             
             <!-- Left: Feature List -->
-            <div class="lg:col-span-7 space-y-6 reveal" style="animation-delay: 0.2s;">
-                <h3 class="text-xl font-black uppercase tracking-widest text-red-600 mb-8 flex items-center gap-4">
+            <div class="lg:col-span-7 space-y-6 reveal order-2 lg:order-1" style="animation-delay: 0.2s;">
+                <h3 class="text-lg md:text-xl font-black uppercase tracking-widest text-red-600 mb-6 md:mb-8 flex items-center gap-4">
                     What's Included <span class="h-px bg-red-600/30 flex-grow"></span>
                 </h3>
                 
-                <div class="grid sm:grid-cols-1 gap-4">
+                <div class="grid grid-cols-1 gap-4">
                     <!-- Feature Items -->
-                    <div class="glass-card p-6 rounded-3xl flex items-center gap-6 group hover:border-red-600/50">
-                        <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center group-hover:bg-red-600 transition-colors">
-                            <i data-lucide="facebook" class="w-6 h-6 text-red-600 group-hover:text-white"></i>
+                    <div class="glass-card p-5 md:p-6 rounded-2xl md:rounded-3xl flex items-start md:items-center gap-4 md:gap-6 group hover:border-red-600/50">
+                        <div class="shrink-0 w-10 h-10 md:w-12 md:h-12 bg-white/5 rounded-xl md:rounded-2xl flex items-center justify-center group-hover:bg-red-600 transition-colors">
+                            <i data-lucide="facebook" class="w-5 h-5 md:w-6 md:h-6 text-red-600 group-hover:text-white"></i>
                         </div>
                         <div>
-                            <h4 class="font-black uppercase text-sm tracking-widest">Business Page Creation</h4>
-                            <p class="text-xs text-slate-500 mt-1">পূর্ণাঙ্গ বিজনেস পেজ তৈরি এবং অপ্টিমাইজেশন।</p>
+                            <h4 class="font-black uppercase text-xs md:text-sm tracking-widest">Business Page Creation</h4>
+                            <p class="text-[11px] md:text-xs text-slate-500 mt-1">পূর্ণাঙ্গ বিজনেস পেজ তৈরি এবং অপ্টিমাইজেশন।</p>
                         </div>
                     </div>
 
-                    <div class="glass-card p-6 rounded-3xl flex items-center gap-6 group hover:border-red-600/50">
-                        <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center group-hover:bg-red-600 transition-colors">
-                            <i data-lucide="image" class="w-6 h-6 text-red-600 group-hover:text-white"></i>
+                    <div class="glass-card p-5 md:p-6 rounded-2xl md:rounded-3xl flex items-start md:items-center gap-4 md:gap-6 group hover:border-red-600/50">
+                        <div class="shrink-0 w-10 h-10 md:w-12 md:h-12 bg-white/5 rounded-xl md:rounded-2xl flex items-center justify-center group-hover:bg-red-600 transition-colors">
+                            <i data-lucide="image" class="w-5 h-5 md:w-6 md:h-6 text-red-600 group-hover:text-white"></i>
                         </div>
                         <div>
-                            <h4 class="font-black uppercase text-sm tracking-widest">Premium Design Assets</h4>
-                            <p class="text-xs text-slate-500 mt-1">১টি প্রফেশনাল কভার ফটো ডিজাইন এবং প্রোফাইল পিকচার সেটআপ।</p>
+                            <h4 class="font-black uppercase text-xs md:text-sm tracking-widest">Premium Design Assets</h4>
+                            <p class="text-[11px] md:text-xs text-slate-500 mt-1">১টি প্রফেশনাল কভার ফটো ডিজাইন এবং প্রোফাইল পিকচার সেটআপ।</p>
                         </div>
                     </div>
 
-                    <div class="glass-card p-6 rounded-3xl flex items-center gap-6 group hover:border-red-600/50">
-                        <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center group-hover:bg-red-600 transition-colors">
-                            <i data-lucide="message-circle" class="w-6 h-6 text-red-600 group-hover:text-white"></i>
+                    <div class="glass-card p-5 md:p-6 rounded-2xl md:rounded-3xl flex items-start md:items-center gap-4 md:gap-6 group hover:border-red-600/50">
+                        <div class="shrink-0 w-10 h-10 md:w-12 md:h-12 bg-white/5 rounded-xl md:rounded-2xl flex items-center justify-center group-hover:bg-red-600 transition-colors">
+                            <i data-lucide="message-circle" class="w-5 h-5 md:w-6 md:h-6 text-red-600 group-hover:text-white"></i>
                         </div>
                         <div>
-                            <h4 class="font-black uppercase text-sm tracking-widest">WhatsApp & CTA Integration</h4>
-                            <p class="text-xs text-slate-500 mt-1">মেসেজিং, হোয়াটসঅ্যাপ এবং কল বাটন ইন্টিগ্রেশন।</p>
+                            <h4 class="font-black uppercase text-xs md:text-sm tracking-widest">WhatsApp & CTA Integration</h4>
+                            <p class="text-[11px] md:text-xs text-slate-500 mt-1">মেসেজিং, হোয়াটসঅ্যাপ এবং কল বাটন ইন্টিগ্রেশন।</p>
                         </div>
                     </div>
 
-                    <div class="glass-card p-6 rounded-3xl flex items-center gap-6 group hover:border-red-600/50">
-                        <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center group-hover:bg-red-600 transition-colors">
-                            <i data-lucide="layout-grid" class="w-6 h-6 text-red-600 group-hover:text-white"></i>
+                    <div class="glass-card p-5 md:p-6 rounded-2xl md:rounded-3xl flex items-start md:items-center gap-4 md:gap-6 group hover:border-red-600/50">
+                        <div class="shrink-0 w-10 h-10 md:w-12 md:h-12 bg-white/5 rounded-xl md:rounded-2xl flex items-center justify-center group-hover:bg-red-600 transition-colors">
+                            <i data-lucide="layout-grid" class="w-5 h-5 md:w-6 md:h-6 text-red-600 group-hover:text-white"></i>
                         </div>
                         <div>
-                            <h4 class="font-black uppercase text-sm tracking-widest">Initial Content Strategy</h4>
-                            <p class="text-xs text-slate-500 mt-1">প্রথম ৩টি প্রফেশনাল পোস্ট (কন্টেন্ট ও ডিজাইন সহ)।</p>
+                            <h4 class="font-black uppercase text-xs md:text-sm tracking-widest">Initial Content Strategy</h4>
+                            <p class="text-[11px] md:text-xs text-slate-500 mt-1">প্রথম ৩টি প্রফেশনাল পোস্ট (কন্টেন্ট ও ডিজাইন সহ)।</p>
                         </div>
                     </div>
 
-                    <div class="glass-card p-6 rounded-3xl flex items-center gap-6 group hover:border-red-600/50">
-                        <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center group-hover:bg-red-600 transition-colors">
-                            <i data-lucide="settings" class="w-6 h-6 text-red-600 group-hover:text-white"></i>
+                    <div class="glass-card p-5 md:p-6 rounded-2xl md:rounded-3xl flex items-start md:items-center gap-4 md:gap-6 group hover:border-red-600/50">
+                        <div class="shrink-0 w-10 h-10 md:w-12 md:h-12 bg-white/5 rounded-xl md:rounded-2xl flex items-center justify-center group-hover:bg-red-600 transition-colors">
+                            <i data-lucide="settings" class="w-5 h-5 md:w-6 md:h-6 text-red-600 group-hover:text-white"></i>
                         </div>
                         <div>
-                            <h4 class="font-black uppercase text-sm tracking-widest">Advanced Admin Setup</h4>
-                            <p class="text-xs text-slate-500 mt-1">ম্যাসেজিং অটো-রিপ্লাই এবং পেজ রোলস কনফিগারেশন।</p>
+                            <h4 class="font-black uppercase text-xs md:text-sm tracking-widest">Advanced Admin Setup</h4>
+                            <p class="text-[11px] md:text-xs text-slate-500 mt-1">ম্যাসেজিং অটো-রিপ্লাই এবং পেজ রোলস কনফিগারেশন।</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Right: Price Sticky Card -->
-            <div class="lg:col-span-5 lg:sticky lg:top-32 reveal" style="animation-delay: 0.4s;">
-                <div class="glass-card rounded-[3rem] overflow-hidden border-red-600/20 shadow-2xl shadow-red-600/5">
-                    <div class="price-tag p-12 text-center relative">
+            <div class="lg:col-span-5 lg:sticky lg:top-32 reveal order-1 lg:order-2 mb-8 lg:mb-0" style="animation-delay: 0.4s;">
+                <div class="glass-card rounded-[2rem] md:rounded-[3rem] overflow-hidden border-red-600/20 shadow-2xl shadow-red-600/5">
+                    <div class="price-tag p-8 md:p-12 text-center relative">
                         <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 24px 24px;"></div>
-                        <h5 class="text-[10px] font-black uppercase tracking-[0.5em] text-white/70 mb-4">Investment</h5>
-                        <div class="text-6xl md:text-7xl font-black tracking-tighter">৳6,000</div>
-                        <p class="text-sm font-bold uppercase tracking-widest mt-4 opacity-80">One-Time Fee</p>
+                        <h5 class="text-[9px] md:text-[10px] font-black uppercase tracking-[0.4em] md:tracking-[0.5em] text-white/70 mb-3 md:mb-4">Investment</h5>
+                        <div class="text-5xl md:text-7xl font-black tracking-tighter">৳6,000</div>
+                        <p class="text-xs md:text-sm font-bold uppercase tracking-widest mt-3 md:mt-4 opacity-80">One-Time Fee</p>
                     </div>
-                    <div class="p-10 space-y-8">
-                        <div class="flex items-center justify-between py-4 border-b border-white/5">
-                            <span class="text-xs font-black uppercase tracking-widest text-slate-500">Timeline</span>
-                            <span class="text-sm font-bold">2–3 Working Days</span>
+                    <div class="p-6 md:p-10 space-y-4 md:space-y-8">
+                        <div class="flex items-center justify-between py-3 md:py-4 border-b border-white/5">
+                            <span class="text-[10px] md:text-xs font-black uppercase tracking-widest text-slate-500">Timeline</span>
+                            <span class="text-xs md:text-sm font-bold">2–3 Working Days</span>
                         </div>
-                        <div class="flex items-center justify-between py-4 border-b border-white/5">
-                            <span class="text-xs font-black uppercase tracking-widest text-slate-500">Service Area</span>
-                            <span class="text-sm font-bold">Global / Local (BD)</span>
+                        <div class="flex items-center justify-between py-3 md:py-4 border-b border-white/5">
+                            <span class="text-[10px] md:text-xs font-black uppercase tracking-widest text-slate-500">Service Area</span>
+                            <span class="text-xs md:text-sm font-bold">Global / Local (BD)</span>
                         </div>
-                        <div class="flex items-center justify-between py-4 border-b border-white/5">
-                            <span class="text-xs font-black uppercase tracking-widest text-slate-500">Post-Launch Support</span>
-                            <span class="text-sm font-bold">7 Days Support</span>
+                        <div class="flex items-center justify-between py-3 md:py-4 border-b border-white/5">
+                            <span class="text-[10px] md:text-xs font-black uppercase tracking-widest text-slate-500">Post-Launch Support</span>
+                            <span class="text-xs md:text-sm font-bold">7 Days Support</span>
                         </div>
 
-                        <button onclick="handleEmail()" class="w-full py-6 bg-white text-black font-black uppercase tracking-widest text-xs rounded-2xl hover:bg-red-600 hover:text-white transition-all shadow-xl flex items-center justify-center gap-3">
+                        <button onclick="handleEmail()" class="w-full py-5 md:py-6 bg-white text-black font-black uppercase tracking-widest text-[10px] md:text-xs rounded-xl md:rounded-2xl hover:bg-red-600 hover:text-white transition-all shadow-xl flex items-center justify-center gap-3 active:scale-95">
                             Approve Proposal <i data-lucide="check-circle" class="w-4 h-4"></i>
                         </button>
                     </div>
                 </div>
 
-                <p class="text-center mt-8 text-[10px] text-slate-500 uppercase font-black tracking-widest">
+                <p class="text-center mt-6 md:mt-8 text-[9px] md:text-[10px] text-slate-500 uppercase font-black tracking-widest">
                     Crafted for excellence by <span class="text-red-600">Galaxa Tech</span>
                 </p>
             </div>
@@ -182,8 +187,10 @@
     </section>
 
     <!-- Footer Minimal -->
-    <footer class="py-12 px-6 border-t border-white/5 text-center">
-        <p class="text-[9px] text-slate-600 uppercase font-black tracking-[0.4em]">© 2026 Galaxa Tech. Solution to the Marketing Conundrum.</p>
+    <footer class="py-10 md:py-12 px-6 border-t border-white/5 text-center">
+        <p class="text-[8px] md:text-[9px] text-slate-600 uppercase font-black tracking-[0.3em] md:tracking-[0.4em] leading-relaxed">
+            © 2026 Galaxa Tech. <br class="md:hidden" /> Solution to the Marketing Conundrum.
+        </p>
     </footer>
 
     <script>
